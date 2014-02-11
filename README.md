@@ -22,7 +22,8 @@ __Midje__
 Add this to your Midje [configuration file](https://github.com/marick/Midje/wiki/Configuration-files):
 
 ```clojure
-(change-defaults :emitter 'midje-teamcity.emitter)
+(when-not (running-in-repl?)
+  (change-defaults :emitter 'midje-teamcity.emitter))
 ```
 
 __Run Tests__
