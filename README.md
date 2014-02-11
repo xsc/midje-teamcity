@@ -9,7 +9,7 @@ I will open a pull request at Midje itself once this has proven it's not destroy
 
 ## Usage
 
-__Leiningen__ ([via Clojars](https://clojars.org/midje-teamcity)
+__Leiningen__ ([via Clojars](https://clojars.org/midje-teamcity))
 
 Add this to your `:dependencies` (or in a separate profile):
 
@@ -32,7 +32,7 @@ You can now run your tests using, e.g. `lein-midje`:
 ```bash
 $ lein midje
 ##teamcity[testSuiteStarted name='my.test']
-##teamcity[testStarted name='about something to be tested.' captureStandardOutput='true']
+##teamcity[testStarted name='about something to test.' captureStandardOutput='true']
 ...
 ```
 
